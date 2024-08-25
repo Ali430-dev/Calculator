@@ -1,0 +1,150 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    width: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+    background-color: #444;
+    color: white;
+    font-size: 2em;
+    text-align: right;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #555;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+}
+
+button {
+    background-color: #666;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+button:active {
+    background-color: #888;
+}
+
+/* styles.css */
+button {
+    background-color: #666;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+button:active {
+    background-color: #888;
+}
+
+/* Boutons spéciaux */
+button:nth-child(16),
+/* Bouton "=" */
+button:nth-child(17) {
+    /* Bouton "C" */
+    background-color: #d9534f;
+    color: white;
+}
+
+button:nth-child(16):hover,
+button:nth-child(17):hover {
+    background-color: #c9302c;
+}
+
+button:nth-child(16):active,
+button:nth-child(17):active {
+    background-color: #ac2925;
+}
+
+/* styles.css */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+}
+
+button {
+    background-color: #666;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+button:active {
+    background-color: #888;
+}
+
+button:nth-child(16),
+/* Bouton "=" */
+button:nth-child(17) {
+    /* Bouton "C" */
+    background-color: #d9534f;
+    color: white;
+}
+
+button:nth-child(16):hover,
+button:nth-child(17):hover {
+    background-color: #c9302c;
+}
+
+button:nth-child(16):active,
+button:nth-child(17):active {
+    background-color: #ac2925;
+}
+
+/* Style pour le bouton "0" afin de le rendre plus large */
+button:nth-child(13) {
+    grid-column: span 2;
+}
+
+/* styles.css */
+#display {
+    background-color: #444;
+    color: white;
+    font-size: 2em;
+    text-align: right;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #555;
+    overflow: hidden;
+    /* Évite le débordement du texte */
+    white-space: nowrap;
+    /* Texte sur une seule ligne */
+}
